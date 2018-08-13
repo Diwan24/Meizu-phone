@@ -1,0 +1,394 @@
+ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* settings of card product list style */
+
+ul li {
+  width: 270px;
+  height: 440px;
+  box-shadow: 0 1px 4px rgba(130, 130, 130, 0.04), 0 3px 10px rgba(130, 130, 130, 0.1);
+  border-radius: 1px;
+  background-color: #ffffff;
+  margin: 20px 0px;
+}
+
+/* settings of site's header */
+
+header {
+  height: 270px;
+}
+
+header div {
+  padding-top: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+header h3 {
+  color: #555555;
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+header p {
+  color: #828282;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+header p sup {
+  color: #3491cd;
+}
+
+header.container img {
+  width: 200px;
+  height: 37px;
+  margin-bottom: 25px;
+}
+
+.list-inline-item a { /* карта товара "делается"" ссылкой */
+  display: block;
+  height: 100%;
+}
+
+.list-inline-item a:hover {
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.05), 0 7px 14px rgba(0, 0, 0, 0.1);
+  border-radius: 1px;
+  text-decoration: none;
+}
+
+/* set margins depending on screen width */
+
+@media (min-width: 300px) {
+  .list-inline-item {
+    margin: 0 auto 40px auto;
+}
+}
+
+@media (min-width: 768px) {
+  .list-inline-item:not(:last-child) {
+    margin: 0 20px 40px 20px;
+}
+}
+
+@media (min-width: 992px) {
+  .list-inline-item:not(:last-child) {
+    margin: 0 40px 0px 0px;
+}
+}
+
+/* settings of site's footer */
+
+footer {
+  height: 131px;
+  text-align: center;
+}
+
+footer div {
+  padding-top: 46px;
+  color: #82828c;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 16px;
+}
+
+footer {
+  z-index: 100;
+}
+
+.icon_search {
+  width: 61px;
+  height: 61px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+
+.icon_search img {
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.icon_search:hover img {
+  width: 22px;
+  height: 22px;
+  opacity: 0.75;
+}
+
+.icon_search:active {
+  width: 61px;
+  height: 61px;
+  opacity: 0.1;
+  background: #555;
+}
+
+.icon_search:active img{
+  width: 22px;
+  height: 22px;
+  opacity: 0.5;
+}
+
+.icon_close {
+  width: 61px;
+  height: 61px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+
+.icon_close img {
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.icon_close:hover img {
+  width: 22px;
+  height: 22px;
+  opacity: 0.75;
+}
+
+.icon_close:active {
+  width: 61px;
+  height: 61px;
+  opacity: 0.1;
+  background: #555;
+}
+
+.icon_close:active img{
+  width: 22px;
+  height: 22px;
+  opacity: 0.5;
+}
+
+.bg_search {
+  display: none;
+  background: url(../assets/backgrounds/pattern-02.png);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.bg_search h1 {
+  display: block;
+  width: 300px;
+  height: 100px;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 90px;
+  left: 0;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 42px;
+  font-weight: 300;
+  line-height: 40px;
+}
+
+.bg_search input {
+  position: fixed;
+  width: 66%;
+  height: 64px;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #555555;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.button_search {
+  width: 61px;
+  height: 61px;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 61%;
+  right: 0;
+  bottom: 0;
+}
+
+.button_search img {
+  width: 19px;
+  height: 19px;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 61%;
+  right: 0;
+  bottom: 0;
+}
+
+.button_search:hover img {
+  width: 22px;
+  height: 22px;
+  opacity: 0.75;
+}
+
+.button_search:active {
+  width: 61px;
+  height: 61px;
+  opacity: 0.1;
+  background: #555;
+}
+
+.button_search:active img{
+  width: 22px;
+  height: 22px;
+  opacity: 0.5;
+}
+
+figure {
+  display: inline-block;
+  margin: 35px 35px 11px 35px;
+}
+
+figure img {
+  width: 200px;
+  height: 229px;
+}
+
+figure figcaption {
+  color: #bebebe;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+/* setting style for interactive elements */
+
+.button {
+  display: block;
+  margin: 0 auto 5px auto;
+  padding: 0;
+  text-align: center;
+}
+
+.inner_circle { /* for borders */
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  background: #fff;
+}
+
+.inner_circle:not(:last-child) {
+  margin-right: 24px;
+}
+
+.black {
+  background: #000;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.blue {
+  background: #3d69df;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.gold {
+  background: #c7b299;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.gray {
+  background: #bebec8;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* creating a borders while hover circles */
+
+  .inner_circle_black:hover { 
+    border: 1px solid #232323;
+  }
+  .inner_circle_blue:hover {
+    border: 1px solid #3d69df;
+  }
+  .inner_circle_gold:hover {
+    border: 1px solid #c7b299;
+  }
+  .inner_circle_gray:hover {
+    border: 1px solid #bebec8;
+  }
+
+  .phone_name {
+    color: #82828c;
+    font-family: Roboto;
+    font-size: 27px;
+    font-weight: 300;
+  }
+
+  .price {
+    color: #ff4e00;
+    font-family: Roboto;
+    font-size: 27px;
+    font-weight: 300;
+  }
+
+/* symbol of ruble in Unicode */
+
+  .price:after {
+    content: "\20BD";
+  }
